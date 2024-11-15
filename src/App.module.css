@@ -1,0 +1,12 @@
+/* App.module.css */
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    margin-top:10px;
+    align-self:center;
+  }
+  

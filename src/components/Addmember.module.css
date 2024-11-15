@@ -1,0 +1,111 @@
+/* Overlay to cover the background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Center vertically */
+  justify-content: flex-end; /* Center horizontally */
+  z-index: 1;
+}
+
+/* Modal container for the form */
+.addMemberContainer {
+  background-color: #000000;
+  color: #f0f0f0;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-right: 200px;
+}
+
+
+
+/* Input field styling */
+.addMemberContainer input {
+  /* width: 100%; */
+  width: auto;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #444;
+  color: #f0f0f0;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.addMemberContainer input:focus {
+  border-color: #5c6bc0;
+}
+
+/* Button styling */
+.addMemberContainer button {
+  width: auto;
+  margin: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addMemberContainer button:hover {
+  background-color: #3f51b5;
+}
+
+/* Ensure space between buttons */
+.addMemberContainer button + button {
+  margin-top: 10px;
+}
+
+/* Error message */
+.errorMessage {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* OnClose styling for header and button */
+.onClose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width to align elements */
+  margin-bottom: 20px; /* Adds spacing below the header */
+}
+
+.onClose h4 {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Adjust header size */
+  color: #f0f0f0; /* Match the modal text color */
+}
+
+.onClose button {
+  background: none; /* Remove default button styling */
+  color: #f0f0f0;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.onClose button:hover {
+  color: #e74c3c; /* Red color on hover */
+}
+

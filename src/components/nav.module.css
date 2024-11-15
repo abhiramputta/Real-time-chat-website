@@ -1,0 +1,56 @@
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical centering */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+
+    
+    padding: 20px;
+}
+
+.headingdiv h1 {
+    margin: 0;
+    font-size:xx-large;
+}
+
+.navlist {
+    flex: 0.4;
+}
+
+.navlist ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navlist li {
+    cursor: pointer;
+}
+
+.navlist li button {
+    background: none;
+    border: 0;
+    color: aquamarine;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navlist li button:hover {
+    background-color: rgba(0, 255, 255, 0.1); /* Light background on hover */
+    
+}
+
+.navlist li button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 3px aquamarine; /* Add custom focus outline */
+}
+
+.headingdiv {
+    flex: 0.4; /* Adjust size of the heading area */
+}
+
+

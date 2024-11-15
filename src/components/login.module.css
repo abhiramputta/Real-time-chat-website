@@ -1,0 +1,91 @@
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+}
+
+.innerdiv {
+    display: flex;
+    flex: .7;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+ 
+
+}
+
+
+.formcontainer {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(220, 220, 216, 0.7); /* Softer, bigger shadow */
+    gap: 15px;
+    margin-right: 40px;
+    background-color: #d8cf6710; /* Slightly lighter dark background */
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.formcontainer h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #f8f8f8;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formcontainer input {
+    width: 70%;
+    max-width: 350px; /* Adjust the maximum width of input fields */
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly more rounded corners */
+    background-color: #f4f4f4; /* Light background for inputs */
+    color: #333;
+ box-sizing: border-box;}
+
+
+.formcontainer button {
+   
+    width: 70%;
+    max-width: 350px; /* Button width consistent with input fields */
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgb(148, 131, 66);
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded button corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow effect */
+}
+
+.imagediv {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagediv img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow around the image */
+    transition: transform 0.3s ease; /* Smooth transformation */
+}
+
+.imagediv img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
